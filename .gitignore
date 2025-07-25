@@ -1,18 +1,67 @@
+# ======================
+# Magento 2 core
+# ======================
 /vendor/
 /generated/
 /pub/static/
+/pub/media/tmp/
 /var/
-/node_modules/
+/app/etc/env.php
+/app/etc/config.php
+
+# บางส่วนใน var อาจต้องยกเว้นตามที่ต้องการ
+!/var/.htaccess
+
+# ======================
+# Composer / PHP
+# ======================
 *.log
+*.php_cs.cache
 *.cache
-*.zip
-*.gz
-*.tar
+*.lock
+*.tmp
+*.bak
+
+# ======================
+# Node.js / Frontend tools
+# ======================
+/node_modules/
+/package-lock.json
+/yarn.lock
+/.pnp/
+/.pnp.js
+/dist/
+/build/
+
+# ======================
+# Environment / Secrets
+# ======================
 .env
-.DS_Store
+.env.*
+!.env.example
+
+# ======================
+# IDEs / Editors
+# ======================
 .idea/
-/*.iml
+*.iml
+.vscode/
+*.sublime*
+*.code-workspace
+
+# ======================
+# System files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Others
+# ======================
 *.swp
 *.swo
-*.bak
-*.tmp
+*.gz
+*.zip
+*.tar
+*.tgz
+*.7z

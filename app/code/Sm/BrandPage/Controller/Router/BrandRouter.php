@@ -40,7 +40,6 @@ class BrandRouter implements RouterInterface
                 ['request' => $request]
             );
         }
-
         return false;
     }
 }

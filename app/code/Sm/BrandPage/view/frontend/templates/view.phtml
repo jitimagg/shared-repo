@@ -1,0 +1,33 @@
+<?php
+/** @var \Sm\BrandPage\Block\BrandList $block */
+$brandLabel = $block->getBrandLabel();
+$collection = $block->getProductCollection();
+?>
+<h1>สินค้าในแบรนด์: <?= $block->escapeHtml(ucfirst($brandLabel)) ?></h1>
+
+<?php if (count($collection)): ?>
+    <ul style="list-style:none; padding:0; display:flex; flex-wrap: wrap;">
+        <?php foreach ($collection as $product): ?>
+            <li style="width: 200px; margin: 10px; border: 1px solid #ccc; padding:10px; box-sizing: border-box;">
+                <a href="<?= $block->escapeUrl($product->getProductUrl()) ?>" style="text-decoration:none; color:#333;">
+                    <div style="text-align:center;">
+                        <?php
+                        // ดึง URL รูปสินค้าขนาด small (thumbnail)
+                        $imageUrl = $block->getImage($product, 'product_thumbnail_image')->getImageUrl();
+                        ?>
+                        <img src="<?= $block->escapeUrl($imageUrl) ?>" alt="<?= $block->escapeHtml($product->getName()) ?>" style="max-width: 100%; height: auto;" />
+                    </div>
+                    <h2 style="font-size:16px; margin: 10px 0 5px;"><?= $block->escapeHtml($product->getName()) ?></h2>
+                    <div style="color:#d33636; font-weight:bold;">
+                        <?php
+                        // ดึงราคาปัจจุบัน
+                        echo $block->getPriceHtml($product);
+                        ?>
+                    </div>
+                </a>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+<?php else: ?>
+    <p>ไม่พบสินค้าในแบรนด์นี้</p>
+<?php endif; ?>

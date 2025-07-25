@@ -1,0 +1,787 @@
+<?xml version="1.0"?>
+<root>
+  <blocks>
+    <cms_item>
+      <title>Theme - Megamenu Horizontal Config</title>
+      <identifier>megamenu-horizontal</identifier>
+      <content><![CDATA[<div class="horizontal-menu">{{block class="Sm\MegaMenu\Block\MegaMenu\View" template="Sm_MegaMenu::horizontal.phtml" theme="1" group_id="1"}}</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Footer 1 Content</title>
+      <identifier>footer-1-content</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="row"&gt;
+  &lt;div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12"&gt;
+    &lt;div class="infos-footer"&gt;
+      &lt;div class="logo-ft"&gt;
+        &lt;a href="#"&gt;
+          &lt;img src="{{media url=wysiwyg/logo-ft.png}}" alt=""&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;p class="info"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel fringilla enim. Cras eget tellus vestibulum, varius diam eu, tempus odio.&lt;/p&gt;
+      &lt;div class="social-footer"&gt;
+        &lt;ul class="socials"&gt;
+          &lt;li class="twitter"&gt;
+            &lt;a class="_blank" href="https://twitter.com/MagenTech" target="_blank"&gt;
+              &lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="instagram"&gt;
+            &lt;a class="_blank" href="https://www.instagram.com/magentech8888/" target="_blank"&gt;
+              &lt;i class="fa fa fa-instagram"&gt;&lt;/i&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="facebook"&gt;
+            &lt;a class="_blank" href="http://www.facebook.com/MagenTech/" target="_blank"&gt;
+              &lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="pinterest"&gt;
+            &lt;a class="_blank" href="https://www.linkedin.com/in/magentech" target="_blank"&gt;
+              &lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12"&gt;
+    &lt;div class="block-footer"&gt;
+      &lt;div class="title-footer"&gt;Information&lt;/div&gt;
+      &lt;div class="content-footer"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Brands&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Gift Certificates&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Affiliates&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Specials&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;FAQs&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12"&gt;
+    &lt;div class="block-footer box-gallery"&gt;
+      &lt;div class="title-footer"&gt;Galleries&lt;/div&gt;
+      &lt;div class="row"&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/1.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/1.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/2.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/2.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/3.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/3.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/4.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/4.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/5.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/5.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="col-4"&gt;
+          &lt;a class="img-gallery" href="{{media url=wysiwyg/banner/6.jpg}}" rel="gallery-group"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/6.jpg}}" alt=""&gt;
+          &lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-12 col-12"&gt;
+    &lt;div class="block-footer"&gt;
+      &lt;div class="title-footer"&gt;Services&lt;/div&gt;
+      &lt;div class="content-footer"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Contact Us&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Returns&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Support&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Site Map&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href="#"&gt;Customer Service&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Product Sidebar</title>
+      <identifier>product-sidebar</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="products-sidebar"&gt;{{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::list.phtml" title_module="Bestsellers" product_source="other_products" select_category="4" product_limitation="4" display_countdown="0"}}&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Google map</title>
+      <identifier>google-map</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="map"&gt;
+&lt;iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8352535722393!2d144.95373531573256!3d-37.8173276797518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1svi!2s!4v1558405327045!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Contact Us Info</title>
+      <identifier>contact-us-info</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;ul class="list-info"&gt;
+  &lt;li class="item-info address"&gt;
+    &lt;span class="icon-map-pin"&gt;&lt;/span&gt;
+    &lt;div class="info-content"&gt;
+      &lt;span class="des-info"&gt;1 Beverly Hills, House 36, Los Angeles, California, United States.&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="item-info phone"&gt;
+    &lt;span class="icon-phone1"&gt;&lt;/span &gt;
+    &lt;div class="info-content"&gt;
+      &lt;span class="des-info"&gt;Phone: &lt;a href="tel:(+123)4 567 890"&gt;(+123)4 567 890&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span class="des-info"&gt;Hotline: &lt;a href="tel:(+666)8 666 888"&gt;(+666)8 666 888&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li class="item-info email-info"&gt;
+    &lt;span class="icon-mail1"&gt;&lt;/span&gt;
+    &lt;div class="info-content"&gt;
+      &lt;span class="des-info"&gt;Email: &lt;a href="mailto:contact@ytcvn.com"&gt;contact@ytcvn.com&lt;/a&gt;
+      &lt;/span&gt;
+      &lt;span class="des-info"&gt;
+        &lt;a href="mailto:Sale.Marketing@domain.com"&gt;Sale.Marketing@domain.com&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Theme - Newsletter Popup Image</title>
+      <identifier>newsletter-popup-image</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;img src="{{media url=wysiwyg/newsletter/image-newsletter-popup.jpg}}" alt="" width="500" height="300" /&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Theme - Newsletter Popup Description</title>
+      <identifier>newsletter-popup-description</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;h2 class="news-title"&gt;Newsletter&lt;/h2&gt;
+&lt;p&gt;Subscribe to the mailing list to receive updates on new arrivals, special offers and other discount information.&lt;/p&gt;
+
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Xtore - Footer Location</title>
+      <identifier>location-footer</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="footer-add"&gt;&lt;span class="icon-map-pin"&gt;&lt;/span&gt;600 N Washington Ave Suite C203, Minneapolis, MN 55401&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Index 1  - slidershow - policy - banner</title>
+      <identifier>id-1-block-1</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="slidershow"&gt;
+  &lt;div class="slidershow-type-1 hover-to-show"&gt;
+    &lt;div data-owl="owl-slider" data-autoplay="true" data-nav="true" data-dots="true" data-screen0="1" data-screen481="1" data-screen768="1" data-screen992="1" data-screen1200="1" data-screen1441="1" data-screen1681="1" data-screen1920="1" data-margin="1" data-autoplayhoverpause="true" data-loop="true" data-center="false" data-stagepadding="0" data-mousedrag="true" data-touchdrag="true"&gt;
+      &lt;div class="owl-carousel owl-theme"&gt;
+        &lt;div class="item"&gt;
+          &lt;a title="Slide 1" href="#"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/slidershow/home-1/item-1.jpg}}" alt="Slider 1" width="1920" height="706" /&gt;
+          &lt;/a&gt;
+          &lt;div class="sohomeslider-description"&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="des-warp"&gt;
+                &lt;div class="title-slider"&gt;This Week Only for Big Sale&lt;/div&gt;
+                &lt;h3 class="title-slider2"&gt;Best Iphone &lt;br&gt; Collection Starting $255 &lt;/h3&gt;
+                &lt;div class="des-slider"&gt;Lorem ipsum dolor sit amet, consetetursadipscing elitr, sed diam nonumy sit amet, consetetursadipscing elitr, sed diam nonumy&lt;/div&gt;
+                &lt;div class="slide-button"&gt;
+                  &lt;a class="button" href="#"&gt;Shop Now&lt;/a&gt;
+                  &lt;a class="fancybox-media video-slider" href="https://www.youtube.com/watch?v=5Kq5xKEG2Z4"&gt;
+                    &lt;i class="fa fa-play"&gt;Icon&lt;/i&gt;What's Trending &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;a title="Slide 1" href="#"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/slidershow/home-1/item-2.jpg}}" alt="Slider 2" width="1920" height="706" /&gt;
+          &lt;/a&gt;
+          &lt;div class="sohomeslider-description"&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="des-warp"&gt;
+                &lt;div class="title-slider"&gt;This Week Only for Big Sale&lt;/div&gt;
+                &lt;h3 class="title-slider2"&gt;Best Headphone Collection Starting $99&lt;/h3&gt;
+                &lt;div class="des-slider"&gt;Lorem ipsum dolor sit amet, consetetursadipscing elitr, sed diam nonumy sit amet, consetetursadipscing elitr, sed diam nonumy&lt;/div&gt;
+                &lt;div class="slide-button"&gt;
+                  &lt;a class="button" href="#"&gt;Shop Now&lt;/a&gt;
+                  &lt;a class="fancybox-media video-slider" href="https://www.youtube.com/watch?v=5Kq5xKEG2Z4"&gt;
+                    &lt;i class="fa fa-play"&gt;Icon&lt;/i&gt;What's Trending &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+          &lt;a title="Slide 1" href="#"&gt;
+            &lt;img class="mark-lazy" src="{{media url=wysiwyg/slidershow/home-1/item-3.jpg}}" alt="Slider 3" width="1920" height="706" /&gt;
+          &lt;/a&gt;
+          &lt;div class="sohomeslider-description"&gt;
+            &lt;div class="container"&gt;
+              &lt;div class="des-warp"&gt;
+                &lt;div class="title-slider"&gt;This Week Only for Big Sale&lt;/div&gt;
+                &lt;h3 class="title-slider2"&gt;Best Watch &lt;br&gt; Collection Only $79 &lt;/h3&gt;
+                &lt;div class="des-slider"&gt;Lorem ipsum dolor sit amet, consetetursadipscing elitr, sed diam nonumy sit amet, consetetursadipscing elitr, sed diam nonumy&lt;/div&gt;
+                &lt;div class="slide-button"&gt;
+                  &lt;a class="button" href="#"&gt;Shop Now&lt;/a&gt;
+                  &lt;a class="fancybox-media video-slider" href="https://www.youtube.com/watch?v=5Kq5xKEG2Z4"&gt;
+                    &lt;i class="fa fa-play"&gt;Icon&lt;/i&gt;What's Trending &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="loading-content"&gt;
+        &lt;span class="hidden"&gt;Loading...&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="container"&gt;
+&lt;div class="block-policy mb-desktop-100 mt-desktop-100 mb-mobile-40 mt-mobile-40"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="item col-xl-4 col-lg-4 col-md-12 col-12"&gt;
+			&lt;div class="icon"&gt;
+				 &lt;img class="mark-lazy" src="{{media url=wysiwyg/icon-image/policy-1.png}}" alt="" width="64" height="64" /&gt;
+			&lt;/div&gt;		
+			&lt;div class="info-cont"&gt;
+				&lt;a href="#"&gt;Fast &amp;amp; Free Shipping&lt;/a&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum massa quis sapien commodo semper.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="item col-xl-4 col-lg-4 col-md-12 col-12"&gt;
+			&lt;div class="icon"&gt;
+				 &lt;img class="mark-lazy" src="{{media url=wysiwyg/icon-image/policy-2.png}}" alt="" width="64" height="64" /&gt;
+			&lt;/div&gt;		
+			&lt;div class="info-cont"&gt;
+				&lt;a href="#"&gt;30 Days Money Back&lt;/a&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum massa quis sapien commodo semper.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="item last-item col-xl-4 col-lg-4 col-md-12 col-12"&gt;
+			&lt;div class="icon"&gt;
+				 &lt;img class="mark-lazy" src="{{media url=wysiwyg/icon-image/policy-3.png}}" alt="" width="64" height="64" /&gt;
+			&lt;/div&gt;		
+			&lt;div class="info-cont"&gt;
+				&lt;a href="#"&gt;24/7 Help Center&lt;/a&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent rutrum massa quis sapien commodo semper.&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="banners mb-desktop-100 mb-mobile-40"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="banner1 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"&gt;
+			&lt;a class="banner-image" href="#"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/banner-1.jpg}}" alt="" width="786" height="360" /&gt;&lt;/a&gt;				 
+		&lt;/div&gt;
+		&lt;div class="banner2 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12"&gt;
+			&lt;a class="banner-image" href="#"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/banner-2.jpg}}" alt="" width="786" height="360" /&gt;&lt;/a&gt;	
+		&lt;/div&gt;		  
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Listting tabs - Deals</title>
+      <identifier>id-1-block-2</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="container"&gt;
+&lt;div class="block-title"&gt;&lt;h3 class="modtitle text-center"&gt;Featured Products&lt;/h3&gt;&lt;/div&gt;
+{{widget type="Sm\ListingTabs\Block\Widget\AddListingTabs" template="Sm_ListingTabs::default.phtml"  row_items="2" data-autoplay="false" data-autoplayhoverpause="true" title="BEST SELLERS" data-loop="false" data-center="false" data-margin="30" data-stagepadding="0" data-nav="false" data-dots="false" data-mousedrag="true" data-touchdrag="true" data-screen0="1" data-screen481="1"  data-screen768="3" data-screen992="4" data-screen1200="5" data-screen1441="5" data-screen1681="5" data-screen1920="5" type_show="slider" type_filter="categories" category_tabs="4,7,236,233,234" limitation="12"}}
+&lt;/div&gt;
+&lt;div class="block-slider-products mb-desktop-100 mb-mobile-40"&gt;
+&lt;div class="nav-style-1 absolute-nav"&gt;
+&lt;div data-owl="owl-slider" data-autoplay="false" data-nav="true" data-dots="false" data-screen0="1" data-screen481="1" data-screen768="2" data-screen992="2" data-screen1200="3" data-screen1441="3" data-screen1681="3" data-screen1920="3" data-margin="30" data-autoplayhoverpause="true" data-loop="true" data-center="false" data-stagepadding="1" data-mousedrag="true" data-touchdrag="true"&gt;
+{{block class="Sm\FilterProducts\Block\FilterProducts" template="Sm_FilterProducts::slider.phtml" title_module="Limited offer" posttext="Weekly Sale on &lt;span&gt;35%&lt;/span&gt;" product_source="countdown_products" select_category="4,7,193,233,234" product_limitation="5" display_countdown="0" countdown_products="1" date_to="07/26/2024"}}
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Newsletter - Testimonals - Counters</title>
+      <identifier>id-1-block-3</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="block-counters mb-desktop-100 mb-mobile-40"&gt;
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"&gt;	
+			&lt;div class="counters-text block-title"&gt;	
+				&lt;span class="title1 backg-gradient"&gt;
+					Our statistics
+				&lt;/span&gt;
+				&lt;h3 class="modtitle"&gt;
+					Professional Service &amp;amp; Care In A Pleasant Ambience
+				&lt;/h3&gt;
+				&lt;div class="b-content"&gt;
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="counters-num backg-gradient"&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;89&lt;/span&gt;k+ 
+					&lt;p&gt;Happy Customers&lt;/p&gt; 
+				&lt;/div&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;27&lt;/span&gt;k+ 
+					&lt;p&gt;Products Sold&lt;/p&gt; 
+				&lt;/div&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;15&lt;/span&gt;k+ 
+					&lt;p&gt;Years Experience&lt;/p&gt; 
+				&lt;/div&gt;			
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"&gt;	
+			&lt;div class="banners row"&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-1.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-2.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="banners row"&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-3.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-4.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="block-tesnimal"&gt;
+&lt;div class="container"&gt;
+&lt;div class="block-title"&gt;
+	&lt;h2 class="backg-gradient"&gt;
+		what customer say about us
+	&lt;/h2&gt;
+	&lt;p&gt;Over 1,000 satisfied customers with a 5-star reviews&lt;/p&gt;
+&lt;/div&gt;
+	&lt;div class="row block-content"&gt;
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;
+			&lt;div class="item item-1"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-1.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Atonio Bruce&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Great Service and Good Quality Product and it helped my wife osteoarthritis on her knees and hips and myself for arthritis. We have asked our doctor before we used it he said it is fine because we are on other medications. We have recommended to our friends and family in United States they have order and have been using Rumatis Cream. Thank You very much. Whoever has invented this cream. Kind Regards.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;	
+			&lt;div class="item"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-2.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Yelena Belova&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Excellent selection of products, very good prices and super fast delivery to the US.
+					&lt;/div&gt;			
+				&lt;/div&gt;
+				
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-3.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Jared Riley&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Great customer service! I had to make a change to my order and the customer service was extremely helpful and responded quickly. They adjusted my order without issue.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;
+			&lt;div class="item item-3"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-4.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Nyla Shaw&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						We have recommended to our friends and family in United States they have order and have been using Rumatis Cream. Thank You very much. Whoever has invented this cream. Kind Regards.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="background-color: #edf0f5;"&gt;
+&lt;div class="container"&gt;
+  &lt;div class="home-newsletter"&gt;
+    &lt;div class="newsletter-in"&gt;
+      &lt;div class="title-block"&gt;
+        &lt;div class="title1 backg-gradient"&gt; Signup For Newsletter &lt;/div&gt;
+        &lt;h3 class="modtitle"&gt;Don't miss out on exciting promotions &lt;/h3&gt;
+        &lt;div class="promotext"&gt;Lorem ipsum dolor sit amet, c onsectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis&lt;/div&gt;
+      &lt;/div&gt;
+      {{block class="Magento\Newsletter\Block\Subscribe" template="subscribe-footer.phtml"}}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Drop megamenu 1</title>
+      <identifier>drop_megamenu_1</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="mega-drop-content"&gt;
+	&lt;div class="row" style="margin-bottom: 40px;"&gt;
+		&lt;div class="col-menu col-xl-3"&gt;
+			&lt;h3 class="mega-title"&gt;Clothings&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/jacket.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/jeans-trousers.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/dresses.html"}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/handbags.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/bikini.html"}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/shirts.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			
+			&lt;h3 class="mega-title"&gt;Shoes &amp; Sandals&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/accessorie.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sneakers.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sport-wear.html"}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/blazer-pants.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/shoes-sandals.html"}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/sunglasses.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			
+			&lt;h3 class="mega-title"&gt;Bags&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/bags.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/shirts.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/watches.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			&lt;h3 class="mega-title"&gt;Sunglasses&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/blazer-pants.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/clothings.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/sport-wear.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		
+	&lt;/div&gt;
+	&lt;div class="row" &gt;
+		&lt;div class="col-xl-6"&gt;
+			&lt;a class="banner-image" href="{{store url=""}}"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/image-5.jpg}}" alt="" width="786" height="360"&gt;&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xl-6"&gt;
+			&lt;a class="banner-image" href="{{store url=""}}"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/image-6.jpg}}" alt="" width="786" height="360"&gt;&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Drop megamenu Features</title>
+      <identifier>drop_megamenu_features</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="mega-drop-content" style="padding:0 15px;"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-xl-4  feature-column"&gt;
+			&lt;h3 class="mega-title"&gt;Layouts&lt;/h3&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link=""&gt;Home Layout 1&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="arabic" data-sm-link=""&gt;Right to Left&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4  feature-column"&gt;
+			&lt;h3 class="mega-title"&gt;Listing Layouts&lt;/h3&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="listing-layout/without-sidebar.html"&gt;Without Sidebar&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="listing-layout/left-sidebar.html"&gt;Left Sidebar&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="listing-layout/right-sidebar.html"&gt;Right Sidebar&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="listing-layout/left-right-sidebar.html"&gt;Left - Right Sidebar&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4  feature-column"&gt;
+			&lt;h3 class="mega-title"&gt;Detail Layouts&lt;/h3&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="configurable-product.html"&gt;Product Detail - Full&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="khaki-button-tees-tees-blouses.html"&gt;Product Detail - Right Sidebar&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="#" data-sm-store="default" data-sm-link="stephen-joseph-kids-medium.html"&gt;Product Detail - Left Sidebar&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+
+		
+	&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Social Footer</title>
+      <identifier>social-footer</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="social-ft-bottom"&gt;
+&lt;ul&gt;
+&lt;li class="twitter"&gt;&lt;a class="fa fa-twitter" title="Twitter" href="#"&gt; &lt;span class="hidden"&gt;Twitter&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class="facebook"&gt;&lt;a class="fa fa-facebook" title="Facebook" href="#"&gt; &lt;span class="hidden"&gt;Facebook&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class="pinterest"&gt;&lt;a class="fa fa-pinterest" title="Pinterest" href="#"&gt; &lt;span class="hidden"&gt;Pinterest&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;li class="youtube"&gt;&lt;a class="fa fa-youtube-play" title="Youtube" href="#"&gt; &lt;span class="hidden"&gt;Youtube&lt;/span&gt; &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - banner deal</title>
+      <identifier>banner-deal</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/banner-deal.jpg}}" alt=""&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Block Header Top</title>
+      <identifier>block-header-top</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="welcome-msg"&gt;
+&lt;div class="container"&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 hidden-xs"&gt;
+       Donate to support families affected by the war in Singapore!
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Header Links</title>
+      <identifier>header-links</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="header-links "&gt;
+ &lt;ul&gt;
+	&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-map-marker"&gt;&amp;nbsp;&lt;/i&gt;Store Locator&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-truck"&gt;&amp;nbsp;&lt;/i&gt;Order Tracking&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="#"&gt;&lt;i class="fa fa-question-circle"&gt;&amp;nbsp;&lt;/i&gt;FAQs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt; 
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore header telephone</title>
+      <identifier>header-telephone</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="telephone hidden-xs hidden-sm hidden-md"&gt;Need help? Call us: &lt;span&gt;&lt;a href="#"&gt;(+800) 1234 5678 90&lt;/a&gt;&lt;/span&gt; or &lt;span&gt;&lt;a href="#"&gt;info@company.com&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Theme - Newsletter Popup Social</title>
+      <identifier>newsletter-popup-social</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="social-popup"&gt;
+&lt;ul class="socials"&gt;
+          &lt;li class="twitter"&gt;
+            &lt;a class="_blank" href="https://twitter.com/smartaddons" target="_blank"&gt;
+              &lt;i class="fa fa-twitter"&gt;&lt;/i&gt;
+              &lt;span&gt;Twitter&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="instagram"&gt;
+            &lt;a class="_blank" href="https://www.instagram.com/smartaddons13/" target="_blank"&gt;
+              &lt;i class="fa fa fa-instagram"&gt;&lt;/i&gt;
+              &lt;span&gt;Instagram&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="facebook"&gt;
+            &lt;a class="_blank" href="https://www.facebook.com/SmartAddons.page/" target="_blank"&gt;
+              &lt;i class="fa fa-facebook"&gt;&lt;/i&gt;
+              &lt;span&gt;Facebook&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="pinterest"&gt;
+            &lt;a class="_blank" href="https://www.pinterest.com/smartaddons/" target="_blank"&gt;
+              &lt;i class="fa fa-pinterest"&gt;&lt;/i&gt;
+              &lt;span&gt;Pinterest&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Drop megamenu 2</title>
+      <identifier>drop_megamenu_2</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="mega-drop-content"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-menu col-xl-3"&gt;
+			&lt;h3 class="mega-title"&gt;Clothings&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/accessorie.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sneakers.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sport-wear.html"}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/blazer-pants.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/shoes-sandals.html"}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/sunglasses.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			
+			&lt;h3 class="mega-title"&gt;Shoes &amp; Sandals&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/bags.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/shirts.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/watches.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url=""}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			
+			&lt;h3 class="mega-title"&gt;Bags&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/accessorie.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sneakers.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/sport-wear.html"}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/blazer-pants.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/shoes-sandals.html"}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="cellphone/sunglasses.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		&lt;div class="col-menu col-xl-3"&gt;
+			&lt;h3 class="mega-title"&gt;Sunglasses&lt;/h3&gt;
+			
+			&lt;ul&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/jacket.html"}}"&gt;Jacket &amp; Coat&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/jeans-trousers.html"}}"&gt;T-Shirt&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/dresses.html"}}"&gt;Jumpsuits&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/handbags.html"}}"&gt;Dresses&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/bikini.html"}}"&gt;Trousers&lt;/a&gt;&lt;/li&gt;
+				&lt;li&gt;&lt;a href="{{store url="computer/shirts.html"}}"&gt;Accessories&lt;/a&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;	
+		
+	&lt;/div&gt;
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Gostore - Banner Sidebar</title>
+      <identifier>banner-sidebar</identifier>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;a class="banner-image" style=" margin-bottom: 30px;" href="#"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/banner-sidebar.jpg}}" alt="" width="378" height="504"&gt;&lt;/a&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <store_id>0</store_id>
+    </cms_item>
+  </blocks>
+</root>

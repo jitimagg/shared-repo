@@ -1,0 +1,83 @@
+<?php
+/**
+ * Copyright © Magefan (support@magefan.com). All rights reserved.
+ * Please visit Magefan.com for license details (https://magefan.com/end-user-license-agreement).
+ *
+ * Glory to Ukraine! Glory to the heroes!
+ */
+?>
+<?php
+/**
+ * Blog sidebar posts list template
+ *
+ * @var $block \Magefan\Blog\Block\Post\PostList\AbstractList
+ */
+?>
+
+<?php
+    $_postCollection = $block->getPostCollection();
+?>
+<?php
+    $width = (int)$block->getBlockImageWidth() ?: 300;
+    $height = (int)$block->getBlockImageheight() ?: 200;
+    $imageHelper = $this->helper(\Magefan\Blog\Helper\Image::class);
+?>
+<?php if ($_postCollection->count()) { ?>
+<div class="widget block block-<?= $block->escapeHtml(str_replace('_', '-', $block->getWidgetKey())) ?> block-list-posts" >
+    <div class="block-title">
+        <strong><?= $block->escapeHtml(__($block->getBlockTitle() ?: 'Recent Posts')) ?></strong>
+    </div>
+    <div class="block-content">
+	<div data-owl="owl-slider" data-autoplay="false" data-nav="false" data-dots="true" data-screen0="1" data-screen481="1" data-screen768="1" data-screen992="1" data-screen1200="1" data-screen1441="1" data-screen1681="1" data-screen1920="1" data-margin="30" data-autoplayhoverpause="true" data-loop="false" data-center="false" data-stagepadding="0" data-mousedrag="true" data-touchdrag="true">
+	  <div class="owl-carousel owl-theme">
+        <?php foreach ($_postCollection as $_post) { ?>
+            <?php
+                $_postUrl = $block->escapeUrl($_post->getPostUrl());
+                $_postName = $block->escapeHtml($_post->getTitle());
+            ?>
+            <div class="item clearfix">
+                <?php if ($block->getDisplayImage()) { ?>
+                    <?php $featuredImage = $_post->getFeaturedListImage() ?: $_post->getFeaturedImage(); ?>
+                    <div class="post-image">
+                        <?php
+                        $featuredImgAlt = $_post->getData('featured_list_img_alt') ?: $_post->getData('featured_img_alt');
+                        if (!$featuredImgAlt) {
+                            $featuredImgAlt =  $_postName;
+                        }
+                        ?>
+                        <a class="post-item-link" title="<?= $_postName ?>" href="<?= $_postUrl ?>">
+                            <?php
+                                if ($featuredImage) {
+                                    $featuredImageUrl = $imageHelper->init($_post->getFeaturedListImg() ?: $_post->getFeaturedImg())->resize($width, $height);
+                                } else {
+                                    $featuredImageUrl = $this->getViewFileUrl('Magefan_Blog::images/default-no-image.png');
+                                }
+                            ?>
+                            <img data-width-amp="<?= $width ?>" data-height-amp="<?= $height ?>" layout="responsive" src="<?= $block->escapeUrl($featuredImageUrl) ?>"
+                                 alt="<?= $block->escapeHtml($featuredImgAlt) ?>" />
+                        </a>
+						 <?php if ($block->getDisplayImage() && $_post->isPublishDateEnabled()) { ?>
+							<div class="date-post">
+                                    <?php
+                                    $date_post = $_post->getPublishDate('F d, Y');
+                                    $day       = date('d', strtotime($date_post));
+                                    $month     = date('M', strtotime($date_post));
+                                    ?>
+                                    <div class="day"><?php echo $day; ?></div>
+                                    <div class="month"><?php echo $month; ?></div> 
+                            </div>
+                <?php } ?>
+                    </div>
+                <?php } ?>
+
+                <a class="post-item-link" title="<?= $_postName ?>" href="<?= $_postUrl ?>">
+                    <?= $_postName ?>
+                </a>
+				
+            </div>
+        <?php } ?>
+    </div>
+	</div>
+</div>
+</div>
+<?php } ?>

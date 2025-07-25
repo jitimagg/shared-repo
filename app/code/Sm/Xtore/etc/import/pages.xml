@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<root>
+  <pages>
+    <cms_item>
+      <title>Xtore - Hitech/Digital Store Magento 2 Theme</title>
+      <identifier>home-demo-01</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="home-page-1 title-style-1"&gt;{{block class="Magento\\Cms\\Block\\Block" block_id="id-1-block-1"}}{{block class="Magento\\Cms\\Block\\Block" block_id="id-1-block-2"}}{{block class="Magento\\Cms\\Block\\Block" block_id="id-1-block-3"}}&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[<!--
+    <referenceContainer name="right">
+        <referenceBlock name="catalog.compare.sidebar" remove="true" />
+    </referenceContainer>-->]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Enable Cookies</title>
+      <identifier>enable-cookies</identifier>
+      <content_heading>What are Cookies?</content_heading>
+      <content><![CDATA[<div class="enable-cookies cms-content">
+<p>"Cookies" are little pieces of data we send when you visit our store. Cookies help us get to know you better and personalize your experience. Plus they help protect you and other shoppers from fraud.</p>
+<p style="margin-bottom: 20px;">Set your browser to accept cookies so you can buy items, save items, and receive customized recommendations. Here’s how:</p>
+<ul>
+<li><a href="https://support.google.com/accounts/answer/61416?hl=en" target="_blank">Google Chrome</a></li>
+<li><a href="http://windows.microsoft.com/en-us/internet-explorer/delete-manage-cookies" target="_blank">Internet Explorer</a></li>
+<li><a href="http://support.apple.com/kb/PH19214" target="_blank">Safari</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank">Mozilla/Firefox</a></li>
+</ul>
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>Privacy and Cookie Policy</title>
+      <identifier>privacy-policy-cookie-restriction-mode</identifier>
+      <content_heading>Privacy and Cookie Policy</content_heading>
+      <content><![CDATA[<div class="privacy-policy cms-content">
+    <div class="message info">
+        <span>
+            Please replace this text with you Privacy Policy.
+            Please add any additional cookies your website uses below (e.g. Google Analytics).
+        </span>
+    </div>
+    <p>
+        This privacy policy sets out how this website (hereafter "the Store") uses and protects any information that
+        you give the Store while using this website. The Store is committed to ensuring that your privacy is protected.
+        Should we ask you to provide certain information by which you can be identified when using this website, then
+        you can be assured that it will only be used in accordance with this privacy statement. The Store may change
+        this policy from time to time by updating this page. You should check this page from time to time to ensure
+        that you are happy with any changes.
+    </p>
+    <h2>What we collect</h2>
+    <p>We may collect the following information:</p>
+    <ul>
+        <li>name</li>
+        <li>contact information including email address</li>
+        <li>demographic information such as postcode, preferences and interests</li>
+        <li>other information relevant to customer surveys and/or offers</li>
+    </ul>
+    <p>
+        For the exhaustive list of cookies we collect see the <a href="#list">List of cookies we collect</a> section.
+    </p>
+    <h2>What we do with the information we gather</h2>
+    <p>
+        We require this information to understand your needs and provide you with a better service,
+        and in particular for the following reasons:
+    </p>
+    <ul>
+        <li>Internal record keeping.</li>
+        <li>We may use the information to improve our products and services.</li>
+        <li>
+            We may periodically send promotional emails about new products, special offers or other information which we
+            think you may find interesting using the email address which you have provided.
+        </li>
+        <li>
+            From time to time, we may also use your information to contact you for market research purposes.
+            We may contact you by email, phone, fax or mail. We may use the information to customise the website
+            according to your interests.
+        </li>
+    </ul>
+    <h2>Security</h2>
+    <p>
+        We are committed to ensuring that your information is secure. In order to prevent unauthorised access or
+        disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and
+        secure the information we collect online.
+    </p>
+    <h2>How we use cookies</h2>
+    <p>
+        A cookie is a small file which asks permission to be placed on your computer's hard drive.
+        Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit
+        a particular site. Cookies allow web applications to respond to you as an individual. The web application
+        can tailor its operations to your needs, likes and dislikes by gathering and remembering information about
+        your preferences.
+    </p>
+    <p>
+        We use traffic log cookies to identify which pages are being used. This helps us analyse data about web page
+        traffic and improve our website in order to tailor it to customer needs. We only use this information for
+        statistical analysis purposes and then the data is removed from the system.
+    </p>
+    <p>
+        Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find
+        useful and which you do not. A cookie in no way gives us access to your computer or any information about you,
+        other than the data you choose to share with us. You can choose to accept or decline cookies.
+        Most web browsers automatically accept cookies, but you can usually modify your browser setting
+        to decline cookies if you prefer. This may prevent you from taking full advantage of the website.
+    </p>
+    <h2>Links to other websites</h2>
+    <p>
+        Our website may contain links to other websites of interest. However, once you have used these links
+        to leave our site, you should note that we do not have any control over that other website.
+        Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst
+        visiting such sites and such sites are not governed by this privacy statement.
+        You should exercise caution and look at the privacy statement applicable to the website in question.
+    </p>
+    <h2>Controlling your personal information</h2>
+    <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+    <ul>
+        <li>
+            whenever you are asked to fill in a form on the website, look for the box that you can click to indicate
+            that you do not want the information to be used by anybody for direct marketing purposes
+        </li>
+        <li>
+            if you have previously agreed to us using your personal information for direct marketing purposes,
+            you may change your mind at any time by letting us know using our Contact Us information
+        </li>
+    </ul>
+    <p>
+        We will not sell, distribute or lease your personal information to third parties unless we have your permission
+        or are required by law to do so. We may use your personal information to send you promotional information
+        about third parties which we think you may find interesting if you tell us that you wish this to happen.
+    </p>
+    <p>
+        You may request details of personal information which we hold about you under the Data Protection Act 1998.
+        A small fee will be payable. If you would like a copy of the information held on you please email us this
+        request using our Contact Us information.
+    </p>
+    <p>
+        If you believe that any information we are holding on you is incorrect or incomplete,
+        please write to or email us as soon as possible, at the above address.
+        We will promptly correct any information found to be incorrect.
+    </p>
+    <h2><a name="list"></a>List of cookies we collect</h2>
+    <p>The table below lists the cookies we collect and what information they store.</p>
+    <table class="data-table data-table-definition-list">
+        <thead>
+        <tr>
+            <th>Cookie Name</th>
+            <th>Cookie Description</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>FORM_KEY</th>
+                <td>Stores randomly generated key used to prevent forged requests.</td>
+            </tr>
+            <tr>
+                <th>PHPSESSID</th>
+                <td>Your session ID on the server.</td>
+            </tr>
+            <tr>
+                <th>GUEST-VIEW</th>
+                <td>Allows guests to view and edit their orders.</td>
+            </tr>
+            <tr>
+                <th>PERSISTENT_SHOPPING_CART</th>
+                <td>A link to information about your cart and viewing history, if you have asked for this.</td>
+            </tr>
+            <tr>
+                <th>STF</th>
+                <td>Information on products you have emailed to friends.</td>
+            </tr>
+            <tr>
+                <th>STORE</th>
+                <td>The store view or language you have selected.</td>
+            </tr>
+            <tr>
+                <th>USER_ALLOWED_SAVE_COOKIE</th>
+                <td>Indicates whether a customer allowed to use cookies.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-SESSID</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-STORAGE-SECTION-INVALIDATION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-CACHE-TIMEOUT</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>SECTION-DATA-IDS</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>PRIVATE_CONTENT_VERSION</th>
+                <td>Facilitates caching of content on the browser to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>X-MAGENTO-VARY</th>
+                <td>Facilitates caching of content on the server to make pages load faster.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-FILE-VERSION</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+            <tr>
+                <th>MAGE-TRANSLATION-STORAGE</th>
+                <td>Facilitates translation of content to other languages.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>About Us</title>
+      <identifier>about-us</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="block-counters mb-desktop-100 mb-mobile-40"&gt;
+&lt;div class="container"&gt;
+	&lt;div class="row"&gt;
+		&lt;div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"&gt;	
+			&lt;div class="counters-text block-title"&gt;	
+				&lt;span class="title1 backg-gradient"&gt;
+					Our statistics
+				&lt;/span&gt;
+				&lt;h3 class="modtitle"&gt;
+					Professional Service &amp;amp; Care In A Pleasant Ambience
+				&lt;/h3&gt;
+				&lt;div class="b-content"&gt;
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="counters-num backg-gradient"&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;89&lt;/span&gt;k+ 
+					&lt;p&gt;Happy Customers&lt;/p&gt; 
+				&lt;/div&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;27&lt;/span&gt;k+ 
+					&lt;p&gt;Products Sold&lt;/p&gt; 
+				&lt;/div&gt;
+				&lt;div class="item"&gt;
+					&lt;span class="count"&gt;15&lt;/span&gt;k+ 
+					&lt;p&gt;Years Experience&lt;/p&gt; 
+				&lt;/div&gt;			
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"&gt;	
+			&lt;div class="banners row"&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-1.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-2.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class="banners row"&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-3.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+				&lt;div class="banner col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"&gt;
+					&lt;a href="#" class="banner-image"&gt;&lt;img class="mark-lazy" src="{{media url=wysiwyg/banner/service-4.jpg}}" alt=""&gt;&lt;/a&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12"&gt;
+      &lt;div class="module our-team"&gt;
+        &lt;div class="title1 backg-gradient"&gt;Meet Our Team&lt;/div&gt;
+        &lt;h3 class="modtitle"&gt;Our Team member&lt;/h3&gt;
+        &lt;div data-owl="owl-slider" data-autoplay="true" data-nav="true" data-dots="true" data-screen0="1" data-screen481="2" data-screen768="3" data-screen992="4" data-screen1200="5" data-screen1441="5" data-screen1681="5" data-screen1920="5" data-margin="30" data-autoplayhoverpause="true" data-loop="true" data-center="false" data-stagepadding="0" data-mousedrag="true" data-touchdrag="true"&gt;
+          &lt;div class="owl-carousel owl-theme"&gt;
+            &lt;div class="item item-1"&gt;
+              &lt;div class="item-inner"&gt;
+                &lt;div class="item-img"&gt;
+                   &lt;img class="mark-lazy" src="{{media url=wysiwyg/clients/ourteam-1.jpg}}" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div class="item-info"&gt;
+                  &lt;h3&gt;Vladimir Radskin&lt;/h3&gt;
+                  &lt;p&gt;Web Designer&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="item item-2"&gt;
+              &lt;div class="item-inner"&gt;
+                &lt;div class="item-img"&gt;
+                  &lt;img class="mark-lazy" src="{{media url=wysiwyg/clients/ourteam-2.jpg}}" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div class="item-info"&gt;
+                  &lt;h3&gt;Michael Phelps&lt;/h3&gt;
+                  &lt;p&gt;Founder, CEO&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="item item-3"&gt;
+              &lt;div class="item-inner"&gt;
+                &lt;div class="item-img"&gt;
+                  &lt;img class="mark-lazy" src="{{media url=wysiwyg/clients/ourteam-3.jpg}}" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div class="item-info"&gt;
+                  &lt;h3&gt;Michal Kors&lt;/h3&gt;
+                  &lt;p&gt;Tester&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="item item-4"&gt;
+              &lt;div class="item-inner"&gt;
+                &lt;div class="item-img"&gt;
+                  &lt;img class="mark-lazy" src="{{media url=wysiwyg/clients/ourteam-4.jpg}}" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div class="item-info"&gt;
+                  &lt;h3&gt;Tommy Hilfiger&lt;/h3&gt;
+                  &lt;p&gt;Developer&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="item item-5"&gt;
+              &lt;div class="item-inner"&gt;
+                &lt;div class="item-img"&gt;
+                  &lt;img class="mark-lazy" src="{{media url=wysiwyg/clients/ourteam-5.jpg}}" alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div class="item-info"&gt;
+                  &lt;h3&gt;Nina Burns&lt;/h3&gt;
+                  &lt;p&gt;Tech Leader&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="block-tesnimal"&gt;
+&lt;div class="container"&gt;
+&lt;div class="block-title"&gt;
+	&lt;h2 class="backg-gradient"&gt;
+		what customer say about us
+	&lt;/h2&gt;
+	&lt;p&gt;Over 1,000 satisfied customers with a 5-star reviews&lt;/p&gt;
+&lt;/div&gt;
+	&lt;div class="row block-content"&gt;
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;
+			&lt;div class="item item-1"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-1.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Atonio Bruce&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Great Service and Good Quality Product and it helped my wife osteoarthritis on her knees and hips and myself for arthritis. We have asked our doctor before we used it he said it is fine because we are on other medications. We have recommended to our friends and family in United States they have order and have been using Rumatis Cream. Thank You very much. Whoever has invented this cream. Kind Regards.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;	
+			&lt;div class="item"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-2.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Yelena Belova&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Excellent selection of products, very good prices and super fast delivery to the US.
+					&lt;/div&gt;			
+				&lt;/div&gt;
+				
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-3.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Jared Riley&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						Great customer service! I had to make a change to my order and the customer service was extremely helpful and responded quickly. They adjusted my order without issue.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+		
+		&lt;div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12"&gt;
+			&lt;div class="item item-3"&gt;
+				&lt;div class="item-box"&gt;
+					&lt;div class="info-thumb"&gt;	
+						&lt;img src="{{media url=wysiwyg/clients/customer-4.jpg}}" alt=""&gt;
+					&lt;/div&gt;
+					&lt;div class="info-content"&gt;
+						&lt;h3&gt;Nyla Shaw&lt;/h3&gt;
+						&lt;div class="rate"&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+							&lt;i class="fa fa-star" aria-hidden="true"&gt;&amp;nbsp;&lt;/i&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class="info-des"&gt;
+						We have recommended to our friends and family in United States they have order and have been using Rumatis Cream. Thank You very much. Whoever has invented this cream. Kind Regards.
+					&lt;/div&gt;			
+				&lt;/div&gt;		
+			&lt;/div&gt;	
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+    <cms_item>
+      <title>404 Not Found - SM</title>
+      <identifier>sm-no-route</identifier>
+      <content_heading></content_heading>
+      <content><![CDATA[<div data-content-type="html" data-appearance="default" data-element="main">&lt;div class="sm-notfound mt-desktop-100 mb-desktop-100"&gt;&lt;img src="{{media url=wysiwyg/404page/not-found.png}}" alt="404 Image"&gt;
+&lt;p&gt;We can’ta find the page :(&lt;/p&gt;
+&lt;a class="back-home" href="{{store url=""}}"&gt;Back To Home&lt;/a&gt; 
+&lt;/div&gt;</div>]]></content>
+      <is_active>1</is_active>
+      <page_layout>1column</page_layout>
+      <layout_update_xml><![CDATA[]]></layout_update_xml>
+      <store_id>0</store_id>
+    </cms_item>
+  </pages>
+</root>

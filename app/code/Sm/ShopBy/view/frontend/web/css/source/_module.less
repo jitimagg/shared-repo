@@ -1,0 +1,61 @@
+& when (@media-common = true) {
+    #price-slider {
+        box-shadow: none;
+		height: 3px;
+		background: #eeeeee;
+		border-radius: 0 20px 20px 0;
+    }
+
+    #price-slider .ui-slider-range {
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+    }
+
+    #price-slider .ui-slider-handle {
+		box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+		background: #fff;
+		border:2px solid #ff4e08 !important;
+		border-radius:50%;
+		width: 14px;
+		height: 14px;
+		left: -10px;
+		top: -5px;
+    }
+
+    .price-slider-values {
+        margin-top: 20px;
+        text-align: left;
+    }
+
+    .price-slider-values input[type="text"] {
+        border: 1px solid #cccccc;
+        color: #111;
+        padding-left: 2px;
+        padding-right: 2px;
+        text-align: center;
+        width: 65px;
+    }
+
+    .loading-mask-shopby {
+        background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+    }
+
+    .loading-mask-shopby .loader > img {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+    }
+}
+

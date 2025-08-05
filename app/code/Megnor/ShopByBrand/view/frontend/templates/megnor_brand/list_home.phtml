@@ -1,6 +1,6 @@
 <?php 
 $brands = $this->getFeaturedBrands();
-$media = $this->getImageMediaPath();
+$mediaUrl = $block->getMediaUrl();
 ?>
 <div class="brand-home">
 	<div class="brands-outer">
@@ -19,7 +19,7 @@ $media = $this->getImageMediaPath();
 									<a href="<?php echo $this->getUrl('brand/view/',array('id'=>$_brand->getId()));?>">
 								<?php endif;?>
 								<?php if($_brand->getLogo()):?>
-									<img class="brand-img" src="<?php echo $media.$_brand->getLogo() ?>" title="<?php echo $_brand->getName();?>" alt="<?php echo $_brand->getName();?>" />
+									<img class="brand-img" src="<?php echo $mediaUrl.$_brand->getLogo() ?>" title="<?php echo $_brand->getName();?>" alt="<?php echo $_brand->getName();?>" />
 								<?php else:?>
 								<span class="brand-title">
 									<?php echo $_brand->getName();?>

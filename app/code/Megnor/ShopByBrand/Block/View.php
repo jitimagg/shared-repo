@@ -71,7 +71,7 @@ class View extends \Magento\Catalog\Block\Product\AbstractProduct implements
 
     public function getMediaUrl()
     {
-        return $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
+        return $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA); //http://localhost/itsolution/pub/media/
     }
 	
     public function getBrand(){
@@ -139,6 +139,10 @@ class View extends \Magento\Catalog\Block\Product\AbstractProduct implements
 
 		$collection->addAttributeToSelect('name');
     	$collection->addStoreFilter()->addAttributeToFilter('manufacturer' , $brand->getAttributeId());
+        $collection->addAttributeToFilter('visibility', ['in' => [4]]); // แสดงใน catalog + search
+        $collection->addAttributeToFilter('status', 1); // สินค้าเปิดใช้งาน
+        // $collection->setPageSize(12);
+        // $collection->setCurPage($this->getRequest()->getParam('p') ?: 1); // หน้า pagination
 
     	return $collection;
     }
@@ -192,8 +196,6 @@ class View extends \Magento\Catalog\Block\Product\AbstractProduct implements
         }
         return $price;
     }
-
-
 
 	 /**
      * Return identifiers for produced content

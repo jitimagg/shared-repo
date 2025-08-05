@@ -1,15 +1,15 @@
 <?php 
+/** @var \Magento\Catalog\Block\Product\ListProduct $block */
+
 $brand = $this->getBrand();
 $mediaUrl = $block->getMediaUrl();
-$logo = $brand->getLogo();
+$collection = $block->getProductCollection();
 
-echo '<p><strong>Media URL:</strong> ' . $mediaUrl . '</p>';
-echo '<p><strong>Logo:</strong> ' . $logo . '</p>';
 ?>
 
 <div class="page-title-wrapper">
 	<h1 class="page-title">
-		<span><?php echo $brand->getName();?></span>
+		<span><?php echo $block->escapeHtml($brand->getName()); ?></span>
 	</h1>
 </div>
 
@@ -25,6 +25,31 @@ echo '<p><strong>Logo:</strong> ' . $logo . '</p>';
     <?php echo $brand->getDescription();?>    
 </div>
 
-<?php if ($block->getPagerHtml()): ?>
-    <div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
-<?php endif ?>
+<?php if ($collection->getSize()): ?>
+    <div class="products wrapper grid products-grid">
+        <ol class="product-items">
+            <?php foreach ($collection as $_product): ?>
+                <li class="product-item">
+                    <a href="<?php echo $_product->getProductUrl(); ?>" class="product-item-link">
+                        <span class="product-image-container">
+                            <?php
+                            $imageUrl = $block->getImage($_product, 'category_page_grid')->getImageUrl();
+                            ?>
+                            <img src="<?php echo $imageUrl; ?>" alt="<?php echo $block->escapeHtml($_product->getName()); ?>" />
+                        </span>
+                        <span class="product-item-name"><?php echo $block->escapeHtml($_product->getName()); ?></span>
+                        <span class="price"><?php echo $block->getProductPrice($_product); ?></span>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ol>
+    </div>
+
+    <?php if ($block->getPagerHtml()): ?>
+        <div class="toolbar bottom">
+            <?php echo $block->getPagerHtml(); ?>
+        </div>
+    <?php endif; ?>
+<?php else: ?>
+    <p><?php echo __('No products found for this brand.'); ?></p>
+<?php endif; ?>

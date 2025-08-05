@@ -4,13 +4,16 @@ class Sidebar extends \Magento\Framework\View\Element\Template
 {
 
     protected $_brandFactory;
+    protected $storeManager;
 
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
-         \Megnor\ShopByBrand\Model\BrandFactory $brandFactory
+        \Megnor\ShopByBrand\Model\BrandFactory $brandFactory,
+        \Magento\Store\Model\StoreManagerInterface $storeManager
     ) 
     {
-    	$this->_brandFactory = $brandFactory;
+    	$this->_brandFactory = $brandFactory;        
+        $this->storeManager = $storeManager;
         parent::__construct($context);
     }
     
@@ -34,8 +37,11 @@ class Sidebar extends \Magento\Framework\View\Element\Template
 		
     	return $charbrandArray;
     }
-     public function getImageMediaPath(){
-        return $this->getUrl('pub/media',['_secure' => $this->getRequest()->isSecure()]);
+    //  public function getImageMediaPath(){
+    //     return $this->getUrl('pub/media',['_secure' => $this->getRequest()->isSecure()]);
+    // }
+    public function getMediaUrl()
+    {
+        return $this->storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA); //http://localhost/itsolution/pub/media/
     }
-    
 }

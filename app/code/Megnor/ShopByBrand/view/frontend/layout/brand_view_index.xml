@@ -7,8 +7,7 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <attribute name="class" value="megnor_brand_view"/>
-        <attribute name="class" value="page-products"/>
+        <attribute name="class" value="megnor_brand_view page-products"/>
         <referenceContainer name="content">
             <block class="Megnor\ShopByBrand\Block\View" name="brand.view"  template="Megnor_ShopByBrand::megnor_brand/view.phtml" cacheable="false">
 			 </block>

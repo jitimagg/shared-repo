@@ -1,0 +1,11 @@
+<h1>Product List with Toolbar</h1>
+
+<?= $block->getToolbarHtml(); ?>
+
+<ul class="product-list">
+<?php foreach ($block->getProductCollection() as $product): ?>
+    <li>
+        <?= $product->getName() ?>
+    </li>
+<?php endforeach; ?>
+</ul>

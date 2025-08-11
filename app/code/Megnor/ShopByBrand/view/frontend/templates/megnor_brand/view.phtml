@@ -1,5 +1,9 @@
 <?php 
-/** @var \Magento\Catalog\Block\Product\ListProduct $block */
+
+/** 
+ * $block->getImage($product, 'category_page_grid')
+ * $block->getProductPrice($product)
+ * @var \Magento\Catalog\Block\Product\ListProduct $block */
 
 $brand = $this->getBrand();
 $mediaUrl = $block->getMediaUrl();
@@ -21,35 +25,42 @@ $collection = $block->getProductCollection();
 </div>
 <?php endif; ?>
 
-<div class="category-description">
-    <?php echo $brand->getDescription();?>    
-</div>
-
-<?php if ($collection->getSize()): ?>
-    <div class="products wrapper grid products-grid">
-        <ol class="product-items">
-            <?php foreach ($collection as $_product): ?>
-                <li class="product-item">
-                    <a href="<?php echo $_product->getProductUrl(); ?>" class="product-item-link">
-                        <span class="product-image-container">
-                            <?php
-                            $imageUrl = $block->getImage($_product, 'category_page_grid')->getImageUrl();
-                            ?>
-                            <img src="<?php echo $imageUrl; ?>" alt="<?php echo $block->escapeHtml($_product->getName()); ?>" />
-                        </span>
-                        <span class="product-item-name"><?php echo $block->escapeHtml($_product->getName()); ?></span>
-                        <span class="price"><?php echo $block->getProductPrice($_product); ?></span>
-                    </a>
-                </li>
-            <?php endforeach; ?>
-        </ol>
-    </div>
-
-    <?php if ($block->getPagerHtml()): ?>
-        <div class="toolbar bottom">
-            <?php echo $block->getPagerHtml(); ?>
+<?= $block->getToolbarHtml() ?>
+    <?php if ($collection->getSize()): ?>
+        <div class="products wrapper grid products-grid">
+            <ol class="products list items product-items">
+                <?php foreach ($collection as $_product): ?>
+                    <li class="item product product-item">
+                        <div class="product-item-info">
+                            <div class="image-product">
+                                <a href="<?php echo $_product->getProductUrl(); ?>" class="product photo product-item-photo" tabindex="-1">
+                                    <span class="product-image-container">
+                                        <span class="product-image-wrapper" style="padding-bottom: 100%;">
+                                           <?php
+                                            $imageUrl = $block->getImage($_product, 'category_page_grid')->getImageUrl();
+                                            ?>
+                                            <img class="product-image-photo" src="<?php echo $imageUrl; ?>" alt="<?php echo $block->escapeHtml($_product->getName()); ?>" />
+                                        </span>                    
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="product details product-item-details">
+                                <strong class="product name product-item-name">
+                                    <a class="product-item-link" href="<?php echo $_product->getProductUrl(); ?>">
+                                        <?php echo $block->escapeHtml($_product->getName()); ?>
+                                    </a>
+                                </strong>
+                                <span class="price"><?php echo $block->getProductPrice($_product); ?></span>
+                            </div>
+                        </div>
+                    </li>
+                <?php endforeach; ?>
+            </ol>
         </div>
+        <?= $block->getPagerHtml() ?>
+
+
+    <?php else: ?>
+        <p><?php echo __('No products found for this brand.'); ?></p>
     <?php endif; ?>
-<?php else: ?>
-    <p><?php echo __('No products found for this brand.'); ?></p>
-<?php endif; ?>
+

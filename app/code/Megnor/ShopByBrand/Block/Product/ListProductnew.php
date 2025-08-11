@@ -82,16 +82,16 @@ class ListProductnew extends \Magento\Catalog\Block\Product\AbstractProduct impl
     }
 
 
-	 public function getBrand(){
-		$id = $this->getRequest()->getParam('id');
-        if ($id) {
-        	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-			$model = $objectManager->create('Megnor\ShopByBrand\Model\Items');
-			$model->load($id);
-			return $model;
-		}
-		return false;
-    }
+	//  public function getBrand(){
+	// 	$id = $this->getRequest()->getParam('id');
+    //     if ($id) {
+    //     	$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+	// 		$model = $objectManager->create('Megnor\ShopByBrand\Model\Items');
+	// 		$model->load($id);
+	// 		return $model;
+	// 	}
+	// 	return false;
+    // }
 
     /**
      * Retrieve loaded category collection

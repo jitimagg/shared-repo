@@ -4,11 +4,11 @@ $_config = $this->helper('Sm\Themecore\Helper\Data');
   <div class="header-top">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-3 col-sm-6">
           <div class="language-currency"> <?php echo $this->getChildHtml("store_language"); ?> <?php echo $this->getChildHtml("currency"); ?> </div>
         </div>
-        <div class="col-lg-4 d-none d-lg-block"> <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-header-top')->toHtml(); ?> </div>
-        <div class="col-lg-4 col-sm-6 d-none d-sm-block"> <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-links')->toHtml(); ?> </div>
+        <div class="col-lg-6 d-none d-lg-block"> <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('block-header-top')->toHtml(); ?> </div>
+        <div class="col-lg-3 col-sm-6 d-none d-sm-block"> <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('header-links')->toHtml(); ?> </div>
       </div>
     </div>
   </div>

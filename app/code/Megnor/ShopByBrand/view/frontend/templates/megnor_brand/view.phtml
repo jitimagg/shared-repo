@@ -18,11 +18,11 @@ $collection = $block->getProductCollection();
 </div>
 
 <?php if ($brand->getLogo()): ?>
-<div class="brand-image">
+<!-- <div class="brand-image">
 	<img class="brand-img" src="<?php echo $mediaUrl . $brand->getLogo(); ?>"
          title="<?php echo $block->escapeHtml($brand->getName()); ?>"
          alt="<?php echo $block->escapeHtml($brand->getName()); ?>" />
-</div>
+</div> -->
 <?php endif; ?>
 
 <?= $block->getToolbarHtml() ?>

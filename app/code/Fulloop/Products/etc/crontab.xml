@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job instance="Fulloop\Products\Cron\InventoryUpdate" method="execute" name="fulloop_products_inventoryupdate">
+            <schedule>0 * * * *</schedule>
+        </job>
+        <job instance="Fulloop\Products\Cron\VstUpdate" method="execute" name="fulloop_products_vstupdate">
+            <schedule>0 1 * * *</schedule>
+        </job>
+    </group>
+</config>

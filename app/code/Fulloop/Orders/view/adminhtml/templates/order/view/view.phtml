@@ -1,0 +1,22 @@
+<section class="admin__page-section order-view-upload-slip">
+    <div class="admin__page-section-title">
+        <span class="title">Upload Slip</span>
+    </div>
+    <div class="admin__page-section-content">
+        <div class="admin__page-section-item order-payment-method">
+            <div class="admin__page-section-item-title">
+                <span class="title">แจ้งการชำระเงิน</span>
+            </div>
+            <div class="admin__page-section-item-content">
+                <?php if ($block->getSlip()): ?>
+                    <?php foreach ($block->getSlip() as $v): ?>
+                        <p>
+                            <a target="_blank" href="/pub/media<?php echo $v['file_path']; ?>">view slip</a>
+                            / date: <?php echo date('d M Y H:i:s', strtotime($v['created_date'])); ?>
+                        </p>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+</section>

@@ -28,3 +28,34 @@
 .sm_megamenu_wrapper_vertical_menu .sm_megamenu_menu .sm_megamenu_dropdown_fullwidth {    
     padding: 20px 30px !important;
 }
+
+/* Block detail product */
+.default-style .resp-tabs-list {
+    display: flex;
+    overflow-x: auto !important;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.default-style .resp-tabs-list li {    
+	width: 100%;
+}
+/* header */
+.header-top{
+    height:unset !important;
+}
+.header-bottom:after {
+    width: 100% !important;
+	border-radius: 0 !important;
+}
+.header-mobile .mobile-top {
+    background-color: #1b1a41 !important;
+}
+@media (max-width:1024px){
+    .wrap.quicklink {
+    display: none;
+    }
+}
+/* BacktoTop */
+.back2top{
+    bottom: 1% !important;
+}

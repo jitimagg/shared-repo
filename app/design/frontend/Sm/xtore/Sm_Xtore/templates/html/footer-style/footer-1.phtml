@@ -10,6 +10,7 @@ $_config = $this->helper('Sm\Themecore\Helper\Data');
 	</div>
 	<div class="footer-bottom">
 		<div class="container">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('footer-2-content')->toHtml(); ?>
             <div class="row align-items-center">
                     <div class="col-xl-6 col-lg-6 col-md-6 col-12">
                         <?php if ($_config->getAdvanced('copyright_group/custom_copyright')) { ?>

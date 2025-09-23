@@ -1,0 +1,75 @@
+<?php
+    $data = $block->getData();
+    if (empty($data['excel_result']) || empty($data['excel_info'])) {
+        echo 'no data.';
+    } else {
+        if (!empty($data['excel_info'])) {
+            echo "<form action='{$this->getUrl('fulloop_products/import/save')}' method='post' class='import-preview-form'>";
+            foreach ($data['excel_info'] as $name => $value) {
+                echo "<input type='hidden' value='{$value}' name='{$name}'/>";
+            }
+            echo "<input type='hidden' name='form_key' value='{$this->getFormKey()}' />";
+            echo '<input type="submit" />';
+            echo '</form>';
+        }
+
+        if (!empty($data['excel_result'])) {
+            echo '<table class="import-preview-table">';
+            foreach ($data['excel_result'] as $key => $values) {
+                $tag = 'td';
+                if ($key == 0) {
+                    $tag = 'th';
+                }
+                echo '<tr>';
+                foreach ($values as $value) {
+                    echo "<{$tag}>{$value}</{$tag}>";
+                }
+                echo '</tr>';
+            }
+            echo '</table>';
+        }
+
+        echo '
+        <style>
+            .import-preview-table td, .import-preview-table th{
+                padding: 10px;
+                border: 1px solid #e4e3e3;
+            }
+            
+            .import-preview-table th{
+                background: #383331;
+                color: #FFFFFF;
+            }
+            
+            .import-preview-table {
+                margin-top: 20px;
+            }
+            
+            .import-preview-form input[type="submit"]{
+                background-color: #eb5202;
+                border-color: #eb5202;
+                color: #ffffff;
+                text-shadow: 1px 1px 0 rgb(0 0 0 / 25%);
+                font-size: 1.6rem;
+                border: 1px solid;
+                border-radius: 0;
+                display: inline-block;
+                font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                font-weight: 600;
+                line-height: 1.36;
+                padding: 0.6rem 1em 0.6rem;
+                text-align: center;
+                vertical-align: baseline;
+            }
+            
+            .page-layout-admin-2columns-left .page-columns {
+                margin-left: 0;
+            }
+            
+            .page-layout-admin-2columns-left .page-columns .main-col {
+                width: auto;
+                float: none;
+            }
+        </style>';
+    }
+?>

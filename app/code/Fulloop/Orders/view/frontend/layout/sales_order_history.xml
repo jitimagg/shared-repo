@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- This will add additional column header to order list -->
+        <referenceBlock name="sales.order.history.extra.column.header">
+            <block name="vendor.additional.column.header" template="Fulloop_Orders::history/header.phtml" after="status"/>
+        </referenceBlock>
+
+        <!-- You can access current order using $this->getOrder() inside the template "-->
+        <referenceBlock name="sales.order.history.extra.container">
+            <block name="vendor.additional.column.data" template="Fulloop_Orders::history/column.phtml" after="status"/>
+        </referenceBlock>
+    </body>
+</page>

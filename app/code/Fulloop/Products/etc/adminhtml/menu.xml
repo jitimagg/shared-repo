@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+                id="Fulloop_Products::import"
+                title="Import"
+                module="Fulloop_Products"
+                sortOrder="11"
+                resource="Fulloop_Products::import"
+                parent="Magento_Catalog::catalog"/>
+
+        <add
+                id="Fulloop_Products::import_product"
+                title="Product"
+                module="Fulloop_Products"
+                sortOrder="11"
+                parent="Fulloop_Products::import"
+                action="fulloop_products/import/index"
+                resource="Fulloop_Products::import"/>
+    </menu>
+</config>

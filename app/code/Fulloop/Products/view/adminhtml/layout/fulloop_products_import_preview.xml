@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Megnor, Inc. All rights reserved.
+ */
+-->
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <referenceBlock name="page.title">
+        <action method="setPageTitle">
+            <argument name="title" xsi:type="string">Import Product Preview</argument>
+        </action>
+    </referenceBlock>
+    <body>
+<!--        <referenceContainer name="left">-->
+<!--            <block class="Fulloop\Products\Block\Adminhtml\Import\Edit\Tabs" name="fulloop_products_import_edit_tabs">-->
+<!--                <block class="Fulloop\Products\Block\Adminhtml\Import\Edit\Tab\Preview" name="fulloop_products_import_edit_tab_preview"/>-->
+<!--                <action method="addTab">-->
+<!--                    <argument name="name" xsi:type="string">main_section</argument>-->
+<!--                    <argument name="block" xsi:type="string">fulloop_products_import_edit_tab_preview</argument>-->
+<!--                </action>-->
+<!--            </block>-->
+<!--        </referenceContainer>-->
+        <referenceBlock name="content">
+            <block class="Magento\Backend\Block\Template" name="import.preview" template="Fulloop_Products::import/preview.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

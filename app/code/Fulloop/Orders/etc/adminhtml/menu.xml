@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    <add
+        id="Fulloop_orders::slip"
+        title="Slip"
+        translate="title"
+        module="Fulloop_orders"
+        parent="Magento_Sales::sales"
+        sortOrder="10"
+        action="fulloop_orders/slip"
+        resource="Magento_Sales::sales"/>
+    </menu>
+</config>

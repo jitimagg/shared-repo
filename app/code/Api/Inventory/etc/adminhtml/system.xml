@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="api" translate="label" sortOrder="2">
+            <label>API Settings</label>
+        </tab>
+        <section id="inventory" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Service Inventory</label>
+            <tab>api</tab>
+            <resource>Api_Inventory::inventory_config</resource>
+            <group id="connection" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>Connection</label>
+                <field id="url" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>url</label>
+                    <comment/>
+                </field>
+                <field id="username" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Username</label>
+                    <comment/>
+                </field>
+                <field id="password" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+                    <label>Password</label>
+                    <comment/>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

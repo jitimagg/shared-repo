@@ -1,0 +1,26 @@
+{
+    "name": "fulloop/module-pricebot",
+    "description": "Web scraper to gather products price from the competitor websites",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "JAK THIAM UAN",
+            "email": "thiam.uan3@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Fulloop\\Pricebot\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

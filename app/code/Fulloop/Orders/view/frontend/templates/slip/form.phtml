@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-8">
+        <form name="addData" enctype="multipart/form-data" method="post" id="addData" class="form" action="<?php echo $this->getFormAction(); ?>" data-hasrequired="<?= $block->escapeHtmlAttr(__('* Required Fields')) ?>"
+              data-mage-init='{"validation":{}}'>
+            <fieldset class="fieldset">
+                <legend class="legend"><span>Upload Slip</span></legend>
+                <fieldset class="fieldset row">
+                    <div class="fields col-md-6">
+                        <input name="increment_id" class="input-text" type="hidden" value="<?= !empty($_GET['order_id']) ? $_GET['order_id'] : '' ?>">
+                        <div class="field name required">
+                            <label class="label" for="title"><span>Amount</span></label>
+                            <div class="control">
+                                <input name="amount" class="input-text" type="text" data-validate="{required:true}">
+                            </div>
+                        </div>
+                        <div class="field date required">
+                            <label class="label" for="publish_date"><span>Date</span></label>
+                            <div class="control">
+                                <input type="text" name="transfers_date" id="datepicker"  data-validate="{required:true}">
+                            </div>
+                        </div>
+                        <div class="field required">
+                            <label class="label" for="content"><span>Slip</span></label>
+                            <div class="control">
+                                <input type="file" name="slip" data-validate="{required:true}">
+                            </div>
+                        </div>
+
+                    </div>
+                </fieldset>
+            </fieldset>
+            <div class="actions-toolbar">
+                <div class="primary">
+                    <button type="submit" class="action submit primary" title="Save"><span>Save</span></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    require(["jquery", "mage/calendar"], function($){
+        $("#datepicker").calendar({
+            showsTime: false,
+            dateFormat: "M/d/Y",
+            yearRange: "-120y:c+nn",
+            maxDate: "-1d", changeMonth: true, changeYear: true})
+    });
+</script>

@@ -1,0 +1,238 @@
+<?php
+
+$formField = $block->getFormField();
+$customer = $block->getCustomerData();
+
+$esd = $block->getAtuh();
+if (empty($esd['access_token'])) {
+    echo 'cannot get authentication token';
+} else {
+
+?>
+<?php if (!empty($customer['data']['microsoft_customer_id'])) : ?>
+
+        <?php if (!empty($formField)): ?>
+            <?php foreach ($formField as $form_type => $fields): ?>
+            <form id="<?= $form_type ?>" action="<?= $block->getVstUrl('vst/customer/update') ?>">
+
+                <input type="hidden" name="form_type" value="<?= $form_type ?>"/>
+                <input type="hidden" name="esd[token_type]" value="<?= $esd['token_type'] ?>"/>
+                <input type="hidden" name="esd[access_token]" value="<?= $esd['access_token'] ?>"/>
+                <input type="hidden" name="<?= $form_type ?>_microsoft_account[mage_customer_id]" value="<?= $block->getCustomerId() ?>"/>
+                <input type="hidden" name="<?= $form_type ?>_microsoft_account[customer_id]" value="<?= $customer['data']['microsoft_customer_id'] ?>"/>
+                <input type="hidden" name="<?= $form_type ?>_microsoft_account[form_type]" value="<?= $form_type ?>"/>
+                <input type="hidden" name="<?= $form_type ?>_microsoft_account[submit]" value="Update"/>
+                <div class="fieldset-wrapper customer-information">
+                    <div class="fieldset-wrapper-title">
+                    <span class="title">
+                        <?= $block->escapeHtml(__($fields['label'])) ?>
+                    </span>
+
+                    </div>
+                    <table class="admin__table-secondary">
+                        <tbody>
+                        <?php foreach ($fields['fields'] as $k => $v): ?>
+                            <tr>
+                                <td><label class="label">
+                                <span
+                                <?php if ($block->checkInputRequired($v['input_name'])): ?>
+                                    class="input-required"
+                                <?php endif; ?>
+                                >
+                                    <?= $block->escapeHtml(__($v['input_label'])) ?>
+                                </span>
+                                    </label>
+                                </td>
+                                <td class="col-store-view">
+                                    <div class="control">
+                                        <?php if (!empty($v['display_text'])): ?>
+                                            <?= $v['input_value'] ?>
+                                            <?php $v['input_type'] = 'hidden'; ?>
+                                        <?php endif; ?>
+                                        <input
+                                            type="<?= $v['input_type'] ?>"
+                                            name="<?= $form_type ?>_microsoft_account[<?= $v['input_name'] ?>]"
+                                            value="<?= $v['input_value'] ?>"
+                                            class="input-text"
+                                        >
+                                    </div>
+
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                        <tr><td colspan="2"><input type="submit" value="Update <?= $fields['label']?>"/></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            <script type="text/javascript">
+                require([ 'jquery', 'jquery/ui'], function($){
+                    $(document).ready(function($) {
+                        $("#<?= $form_type ?>").submit(function(e) {
+
+                            e.preventDefault(); // avoid to execute the actual submit of the form.
+
+                            var form = $(this);
+                            var url = form.attr('action');
+
+                            form.find('input[type="submit"]').hide();
+                            $.ajax({
+                                type: "POST",
+                                dataType : 'json',
+                                url: url,
+                                data: form.serialize(), // serializes the form's elements.
+                                success: function(data)
+                                {
+                                    alert(data.msg);
+                                    form.find('input[type="submit"]').show();
+                                    if (data.error == 0) {
+                                       location.reload();
+                                    }
+                                }
+                            });
+
+                        });
+                    });
+                });
+            </script>
+            </form>
+            <?php endforeach; ?>
+        <?php endif; ?>
+
+
+<?php else: ?>
+    <form id="microsoft_form" action="<?= $block->getVstUrl('vst/customer/create') ?>">
+
+        <input type="hidden" name="mage_customer_id" value="<?= $block->getCustomerId() ?>"/>
+        <input type="hidden" name="esd[token_type]" value="<?= $esd['token_type'] ?>"/>
+        <input type="hidden" name="esd[access_token]" value="<?= $esd['access_token'] ?>"/>
+        <?php if (!empty($formField)): ?>
+            <?php $i = 1; ?>
+            <?php foreach ($formField as  $fields): ?>
+                <div class="fieldset-wrapper customer-information">
+                    <div class="fieldset-wrapper-title">
+                    <span class="title">
+                        <?= $block->escapeHtml(__($fields['label'])) ?>
+                    </span>
+                        <?php if ($i == 1) : ?>
+                        <input style="float: right;" type="submit" value="Create Microsoft Customer" />
+                        <?php endif; ?>
+                    </div>
+                    <table class="admin__table-secondary">
+                        <tbody>
+                        <?php foreach ($fields['fields'] as $k => $v): ?>
+                            <tr>
+                                <td><label class="label">
+                                <span
+                                <?php if ($block->checkInputRequired($v['input_name'])): ?>
+                                    class="input-required"
+                                <?php endif; ?>
+                                >
+                                    <?= $block->escapeHtml(__($v['input_label'])) ?>
+                                </span>
+                                    </label>
+                                </td>
+                                <td class="col-store-view">
+                                    <div class="control">
+                                        <?php if (!empty($v['display_text'])): ?>
+                                            <?= $v['input_value'] ?>
+                                            <?php $v['input_type'] = 'hidden'; ?>
+                                        <?php endif; ?>
+                                        <input
+                                            type="<?= $v['input_type'] ?>"
+                                            name="microsoft_account[<?= $v['input_name'] ?>]"
+                                            value="<?= $v['input_value'] ?>"
+                                            class="input-text"
+                                        >
+                                    </div>
+
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <?php $i++; ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
+        <script type="text/javascript">
+            require([ 'jquery', 'jquery/ui'], function($){
+                $(document).ready(function($) {
+                    $("#microsoft_form").submit(function(e) {
+
+                        e.preventDefault(); // avoid to execute the actual submit of the form.
+
+                        var form = $(this);
+                        var url = form.attr('action');
+
+                        form.find('input[type="submit"]').hide();
+                        $.ajax({
+                            type: "POST",
+                            dataType : 'json',
+                            url: url,
+                            data: form.serialize(), // serializes the form's elements.
+                            success: function(data)
+                            {
+                                alert(data.msg);
+                                form.find('input[type="submit"]').show();
+                                if (data.error == 0) {
+                                    location.reload();
+                                }
+                            }
+                        });
+
+                    });
+                });
+            });
+        </script>
+
+    </form>
+<?php endif; ?>
+
+<style>
+    .admin__table-secondary th, .admin__table-secondary td {
+        text-align: right;
+        background-color: #FFF !important;
+        padding: 3rem 0 1.5rem 3rem;
+    }
+
+    .admin__table-secondary {
+        width: 55% !important;
+    }
+
+    .label span.input-required:after {
+        color: #e22626;
+        content: '*';
+        display: inline-block;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1;
+        margin-left: 10px;
+        margin-top: .2rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .label span {
+        display: inline-block;
+        line-height: 1.2;
+        vertical-align: middle;
+        white-space: normal;
+        font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 0;
+    }
+
+    input[type=submit] {
+        background-color: #444;
+        border-color: #444;
+        color: #fff;
+        text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+        font-size: 1.6rem;
+        letter-spacing: .025em;
+        padding-bottom: .6875em;
+        padding-top: .6875em;
+    }
+</style>
+
+<?php } ?>

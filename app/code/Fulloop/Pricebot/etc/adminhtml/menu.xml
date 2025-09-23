@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Fulloop::top_level" module="Fulloop_Pricebot" resource="Magento_Backend::content" sortOrder="9999" title="Fulloop"/>
+		<add action="fulloop_pricebot/productprice/index" id="Fulloop_Pricebot::fulloop_pricebot_product_price" module="Fulloop_Pricebot" parent="Fulloop::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Product Price"/>
+        <add action="fulloop_pricebot/productprice/fetch" id="Fulloop_Pricebot::fulloop_pricebot_product_price_fetcj" module="Fulloop_Pricebot" parent="Fulloop::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Process Log"/>
+		<add action="fulloop_pricebot/competitor/index" id="Fulloop_Pricebot::fulloop_pricebot_competitor" module="Fulloop_Pricebot" parent="Fulloop::top_level" resource="Magento_Backend::content" sortOrder="9999" title="Competitor"/>
+	</menu>
+</config>

@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+	<acl>
+		<resources>
+			<resource id="Magento_Backend::admin">
+				<resource id="Fulloop_Pricebot::Product_Price" sortOrder="10" title="Product_Price">
+					<resource id="Fulloop_Pricebot::Product_Price_save" sortOrder="10" title="Save Product_Price"/>
+					<resource id="Fulloop_Pricebot::Product_Price_delete" sortOrder="20" title="Delete Product_Price"/>
+					<resource id="Fulloop_Pricebot::Product_Price_update" sortOrder="30" title="Update Product_Price"/>
+					<resource id="Fulloop_Pricebot::Product_Price_view" sortOrder="40" title="View Product_Price"/>
+				</resource>
+				<resource id="Fulloop_Pricebot::Competitor" sortOrder="10" title="Competitor">
+					<resource id="Fulloop_Pricebot::Competitor_save" sortOrder="10" title="Save Competitor"/>
+					<resource id="Fulloop_Pricebot::Competitor_delete" sortOrder="20" title="Delete Competitor"/>
+					<resource id="Fulloop_Pricebot::Competitor_update" sortOrder="30" title="Update Competitor"/>
+					<resource id="Fulloop_Pricebot::Competitor_view" sortOrder="40" title="View Competitor"/>
+				</resource>
+				<resource id="Fulloop_Pricebot::Process_Log" sortOrder="10" title="Process_Log">
+					<resource id="Fulloop_Pricebot::Process_Log_save" sortOrder="10" title="Save Process_Log"/>
+					<resource id="Fulloop_Pricebot::Process_Log_delete" sortOrder="20" title="Delete Process_Log"/>
+					<resource id="Fulloop_Pricebot::Process_Log_update" sortOrder="30" title="Update Process_Log"/>
+					<resource id="Fulloop_Pricebot::Process_Log_view" sortOrder="40" title="View Process_Log"/>
+				</resource>
+			</resource>
+		</resources>
+	</acl>
+</config>

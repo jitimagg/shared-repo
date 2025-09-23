@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<payment>
+			<creditcard>
+				<active>1</active>
+				<model>Fulloop\Orders\Model\Payment\Creditcard</model>
+				<order_status>pending</order_status>
+				<title>creditcard</title>
+				<allowspecific>0</allowspecific>
+				<group>offline</group>
+			</creditcard>
+			<creditcard_installment>
+				<active>1</active>
+				<model>Fulloop\Orders\Model\Payment\CreditcardInstallment</model>
+				<order_status>pending</order_status>
+				<title>creditcard installment</title>
+				<allowspecific>0</allowspecific>
+				<group>offline</group>
+			</creditcard_installment>
+			<qrcode>
+				<active>1</active>
+				<model>Fulloop\Orders\Model\Payment\Qrcode</model>
+				<order_status>pending</order_status>
+				<title>qrcode</title>
+				<allowspecific>0</allowspecific>
+				<group>offline</group>
+			</qrcode>
+			<wechat>
+				<active>1</active>
+				<model>Fulloop\Orders\Model\Payment\Wechat</model>
+				<order_status>pending</order_status>
+				<title>wechat</title>
+				<allowspecific>0</allowspecific>
+				<group>offline</group>
+			</wechat>
+			<alipay>
+				<active>1</active>
+				<model>Fulloop\Orders\Model\Payment\Alipay</model>
+				<order_status>pending</order_status>
+				<title>alipay</title>
+				<allowspecific>0</allowspecific>
+				<group>offline</group>
+			</alipay>
+		</payment>
+	</default>
+</config>

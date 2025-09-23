@@ -1,0 +1,10 @@
+
+<form action="<?php echo $this->getUrl('fulloop_products/import/preview'); ?>" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="form_key" value="<?php echo $this->getFormKey(); ?>">
+    <div>
+        <input type="file" name="import_product">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
